@@ -2,7 +2,7 @@ body{
     background-color: #A3B18A;
 }
 header {
-    position: fixed; /* Fixé en haut */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
@@ -10,7 +10,7 @@ header {
     background-color: #588157;
     color: white;
     padding: 10px 20px;
-    z-index: 1; /* Priorité sur la sidebar */
+    z-index: 1; 
   }
 .titre{
     display: flex;
@@ -26,14 +26,14 @@ header{
   
   .sidebar {
     position: fixed;
-    top:5em; /* Ajusté pour être sous le header */
+    top:5em; 
     left: 0;
-    height: calc(100vh - 60px); /* Hauteur en fonction du header */
+    height: calc(100vh - 60px); 
     width: 250px;
     background-color: #3A5A40;
     padding-top: 5em;
     color: white;
-    z-index: 0; /* En dessous du header */
+    z-index: 0; 
   }
   .sidebar h2 {
     text-align: center;
@@ -144,21 +144,9 @@ footer{
   animation: pulse 1s linear infinite;
 }
 
-.message, .signin {
+.message{
   color: rgba(88, 87, 87, 0.822);
   font-size: 14px;
-}
-
-.signin {
-  text-align: center;
-}
-
-.signin a {
-  color: royalblue;
-}
-
-.signin a:hover {
-  text-decoration: underline royalblue;
 }
 
 .flex {
@@ -204,21 +192,6 @@ footer{
   color: green;
 }
 
-.submit {
-  border: none;
-  outline: none;
-  background-color: royalblue;
-  padding: 10px;
-  border-radius: 10px;
-  color: #fff;
-  font-size: 16px;
-  transform: .3s ease;
-}
-
-.submit:hover {
-  background-color: rgb(56, 90, 194);
-}
-
 @keyframes pulse {
   from {
     transform: scale(0.9);
@@ -243,8 +216,8 @@ footer{
   border: 2px dashed #00BFA6;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: .4s;
-  margin-top: 5em;
-  margin-left: 80em;
+  margin-top: 1em;
+  margin-left: 100em;
  }
  
  .btn span:last-child {
@@ -298,4 +271,51 @@ footer{
 }
 .annuler{
   color: red;
+}
+/* bouton admin */
+
+
+button {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin-left: 100em;
+}
+
+button:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+
+/* page admin */
+.users{
+  margin-top: 25em;
+  margin-left: 10em;
+  padding-right: 12em;
+}
+.users2{
+  display: flex;
+  margin-left: 17.5em;
+}
+.users {
+  transition: all 1s ease;
+}
+.users:hover {
+  transform: scale(1.25);
 }
