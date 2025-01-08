@@ -65,7 +65,7 @@ header{
 .sidebar2{
     display: flex;
     rotate: -90deg;
-    margin-top: 20em;
+    margin-top: 25em;
 }
 a{
     text-decoration: none;
