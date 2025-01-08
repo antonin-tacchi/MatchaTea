@@ -49,6 +49,8 @@ header{
     font-style: normal;
     font-size: 1.5em;
     padding-right: 2em;
+    padding-left: 1em;
+    color :white;
   }
 .sidebar2{
     display: flex;
